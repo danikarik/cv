@@ -40,6 +40,8 @@ export interface Job {
 export interface Education {
   degree: Text
   school: Text
+  start: number
+  end: number
 }
 
 export interface CV {

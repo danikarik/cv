@@ -203,15 +203,15 @@ export const cv: CV = {
       ]
     },
     {
-      company: { en: "Freelance", ru: "Фриланс" },
+      company: { en: "Project-based work", ru: "Проектная разработка" },
       role: { en: "Ruby on Rails Engineer", ru: "Ruby on Rails-разработчик" },
       start: "2024-11",
       end: "2025-07",
       projects: [
         {
           about: {
-            en: "Project-based development for industrial clients: factory automation and warehouse management systems (WMS).",
-            ru: "Проектная разработка для промышленных заказчиков: системы автоматизации производства и управления складом (WMS)."
+            en: "Development for industrial clients: factory automation and warehouse management systems (WMS).",
+            ru: "Разработка для промышленных заказчиков: системы автоматизации производства и управления складом (WMS)."
           },
           highlights: [
             {
@@ -420,11 +420,28 @@ export const cv: CV = {
 
   education: [
     {
-      degree: { en: "Master's degree in Information Systems", ru: "Магистр информационных систем" },
+      degree: {
+        en: "Master's degree in Information Systems",
+        ru: "Магистратура, информационные системы"
+      },
       school: {
         en: "International Information Technology University",
         ru: "Международный университет информационных технологий"
-      }
+      },
+      start: 2016,
+      end: 2018
+    },
+    {
+      degree: {
+        en: "Bachelor's degree in Information Systems",
+        ru: "Бакалавриат, информационные системы"
+      },
+      school: {
+        en: "International Information Technology University",
+        ru: "Международный университет информационных технологий"
+      },
+      start: 2010,
+      end: 2014
     }
   ]
 }

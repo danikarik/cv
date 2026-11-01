@@ -115,8 +115,11 @@ function print() {
 
     <section>
       <h2>{{ label("education") }}</h2>
-      <p v-for="item in cv.education" :key="item.degree.en" class="education">
-        <strong>{{ t(item.degree) }}</strong> · {{ t(item.school) }}
+      <p v-for="item in cv.education" :key="item.start" class="education">
+        <span
+          ><strong>{{ t(item.degree) }}</strong> · {{ t(item.school) }}</span
+        >
+        <span class="period">{{ item.start }} – {{ item.end }}</span>
       </p>
     </section>
   </main>
@@ -270,7 +273,22 @@ h2 {
 }
 
 .education {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0 1em;
   margin: 0;
+}
+
+.education + .education {
+  margin-top: 0.25em;
+}
+
+.education .period {
+  font-size: 0.9em;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .education strong {

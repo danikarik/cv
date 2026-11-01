@@ -9,7 +9,7 @@ const ui = {
   experience: { en: "Experience", ru: "Опыт работы" },
   education: { en: "Education", ru: "Образование" },
   stack: { en: "Stack", ru: "Стек" },
-  present: { en: "Present", ru: "н. в." },
+  present: { en: "Present", ru: "по настоящее время" },
   switchLang: { en: "Switch language", ru: "Сменить язык" },
   print: { en: "Print / Save PDF", ru: "Печать / PDF" },
   theme: { en: "Color theme", ru: "Цветовая тема" },
@@ -18,23 +18,7 @@ const ui = {
   themeDark: { en: "Dark theme", ru: "Тёмная тема" }
 } satisfies Record<string, Text>
 
-const months: Record<Lang, string[]> = {
-  en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  ru: [
-    "янв.",
-    "февр.",
-    "март",
-    "апр.",
-    "май",
-    "июнь",
-    "июль",
-    "авг.",
-    "сент.",
-    "окт.",
-    "нояб.",
-    "дек."
-  ]
-}
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 function isLang(value: string | null): value is Lang {
   return langs.some((lang) => lang === value)
@@ -68,7 +52,9 @@ export function label(key: keyof typeof ui): string {
 
 function formatMonth(value: YearMonth): string {
   const [year, month] = value.split("-").map(Number)
-  return `${months[lang.value][month - 1]} ${year}`
+  // CV parsers (ATS) read "08.2025" reliably; Russian month abbreviations less so.
+  if (lang.value === "ru") return `${String(month).padStart(2, "0")}.${year}`
+  return `${months[month - 1]} ${year}`
 }
 
 export function formatPeriod(start: YearMonth, end?: YearMonth): string {

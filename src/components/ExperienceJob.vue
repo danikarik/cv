@@ -7,12 +7,11 @@ defineProps<{ job: Job }>()
 
 <template>
   <article class="job">
+    <!-- Role and company on separate lines: CV parsers (ATS) read them as distinct fields. -->
     <header class="job-head">
-      <h3>
-        <span class="company">{{ t(job.company) }}</span>
-        <span class="role">{{ t(job.role) }}</span>
-      </h3>
+      <h3 class="role">{{ t(job.role) }}</h3>
       <span class="period">{{ formatPeriod(job.start, job.end) }}</span>
+      <p class="company">{{ t(job.company) }}</p>
     </header>
 
     <section v-for="(project, i) in job.projects" :key="i" class="project">
@@ -35,29 +34,25 @@ defineProps<{ job: Job }>()
 }
 
 .job-head {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: baseline;
-  justify-content: space-between;
   gap: 0 1em;
   break-after: avoid;
 }
 
-h3 {
+.role {
   margin: 0;
   font-size: 1.05em;
   font-weight: 600;
   color: var(--text-strong);
 }
 
-.role {
+.company {
+  grid-column: 1 / -1;
+  margin: 0;
   font-weight: 500;
-  color: var(--text);
-}
-
-.role::before {
-  content: " · ";
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .period {

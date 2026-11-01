@@ -26,7 +26,7 @@ export const cv: CV = {
       ru: "Бэкенд-инженер и техлид с коммерческим опытом более 12 лет: серверные системы на Go, Python и Ruby on Rails — от проектирования до продакшна на Kubernetes. Интересы: распределённые системы, архитектура БД, событийная архитектура и прикладные LLM."
     },
     {
-      en: "Currently leading backend development of Freedom Lenta, a social commerce platform inside the Freedom SuperApp. Previously built real-time ads targeting services for Reddit and identity verification and crypto wallet services at Endpass.",
+      en: "Currently leading backend development of Freedom Lenta, a social commerce platform inside the Freedom SuperApp. Previously built real-time ad targeting services for Reddit, and identity verification and crypto wallet services at Endpass.",
       ru: "Сейчас руковожу бэкенд-разработкой Freedom Lenta — социально-коммерческой платформы внутри Freedom SuperApp. До этого разрабатывал real-time сервисы рекламного таргетинга для Reddit, а также сервисы верификации личности и криптокошелька в Endpass."
     }
   ],
@@ -34,7 +34,7 @@ export const cv: CV = {
   skills: [
     {
       title: { en: "Languages", ru: "Языки" },
-      items: ["Go", "Python", "Ruby", "SQL", "JavaScript", "Scala"]
+      items: ["Go (Golang)", "Python", "Ruby", "SQL", "JavaScript", "Scala"]
     },
     {
       title: { en: "Frameworks & APIs", ru: "Фреймворки и API" },
@@ -113,8 +113,8 @@ export const cv: CV = {
       ru: "Проведение командных встреч (дейли, ретро, демо) и кросс-командная работа с продуктом, QA, data-командой и партнёрами"
     },
     {
-      en: "Code review standards and engineering guidelines; mentoring and onboarding; led teams of up to 15 developers",
-      ru: "Стандарты код-ревью и инженерные гайдлайны; менторство и онбординг; руководил командами до 15 человек"
+      en: "Code review standards and engineering guidelines; mentoring and onboarding; leading teams of up to 15 developers",
+      ru: "Стандарты код-ревью и инженерные гайдлайны; менторство и онбординг; руководство командами до 15 человек"
     }
   ],
 
@@ -140,12 +140,12 @@ export const cv: CV = {
               ru: "Внедрил агентную разработку в ежедневную работу команды: Claude Code с агентными гайдами в репозиториях (AGENTS.md / CLAUDE.md), общими скиллами и AI-помощью в планировании, реализации и код-ревью."
             },
             {
-              en: "Designed and built the loyalty reward system end-to-end: eligibility rules, idempotent race-safe reward processing, and reconciliation with the partner bank's loyalty program.",
+              en: "Designed and built the loyalty reward system end-to-end: eligibility rules, idempotent, race-safe reward processing, and reconciliation with the partner bank's loyalty program.",
               ru: "Спроектировал и реализовал систему вознаграждений с нуля: правила начисления, идемпотентная обработка наград с защитой от гонок и сверка с программой лояльности банка-партнёра."
             },
             {
-              en: "Built the feed ranking engine on engagement, content quality and author reputation signals; integrated the ML recommendation service with a strict latency budget and graceful fallback.",
-              ru: "Разработал движок ранжирования ленты на сигналах вовлечённости, качества контента и репутации автора; интегрировал ML-сервис рекомендаций со строгим бюджетом задержки и фолбэком."
+              en: "Built the feed ranking engine based on engagement, content quality and author reputation signals; integrated the ML recommendation service with a strict latency budget and graceful fallback.",
+              ru: "Разработал движок ранжирования ленты на основе сигналов вовлечённости, качества контента и репутации автора; интегрировал ML-сервис рекомендаций со строгим бюджетом задержки и фолбэком."
             },
             {
               en: "Designed crowdsourced merchant location verification: matching card transactions to 2GIS map locations with confidence-based publishing.",
@@ -160,12 +160,12 @@ export const cv: CV = {
               ru: "Спроектировал экономику репутации и виртуальной валюты (коинов) с фоновым антиабьюз-скорингом и выявлением накрутки вовлечённости."
             },
             {
-              en: "Built platform infrastructure: event-driven push notifications (Kafka), Elasticsearch search with zero-downtime reindexing, and data pipelines for analytics and ML.",
+              en: "Built platform infrastructure: event-driven push notifications (Kafka), Elasticsearch-based search with zero-downtime reindexing, and data pipelines for analytics and ML.",
               ru: "Запустил платформенную инфраструктуру: событийные пуш-уведомления (Kafka), поиск на Elasticsearch с переиндексацией без простоя и пайплайны данных для аналитики и ML."
             },
             {
-              en: "Improved mini-app performance using Dynatrace and Prometheus data: image caching and WebP delivery via imgproxy, right-sizing of production Kubernetes workloads.",
-              ru: "Улучшил производительность мини-приложения по данным Dynatrace и Prometheus: кэширование и WebP-изображения через imgproxy, оптимизация ресурсов продакшн-нагрузок в Kubernetes."
+              en: "Improved mini-app performance using Dynatrace and Prometheus data: image caching and WebP delivery via imgproxy, and right-sizing of production Kubernetes workloads.",
+              ru: "Улучшил производительность мини-приложения по данным Dynatrace и Prometheus: кэширование изображений и отдача в WebP через imgproxy, оптимизация ресурсов продакшн-нагрузок в Kubernetes."
             }
           ],
           stack: [
@@ -276,7 +276,7 @@ export const cv: CV = {
           },
           highlights: [
             {
-              en: "Introduced and maintained the service that crops the MRZ code from document scans and runs OCR over it.",
+              en: "Built and maintained the service that crops the MRZ code from document scans and runs OCR over it.",
               ru: "Разработал и поддерживал сервис, который вырезает MRZ-код из скана документа и распознаёт его (OCR)."
             },
             {
@@ -313,7 +313,7 @@ export const cv: CV = {
               ru: "Спроектировал и реализовал сборщик данных о стоимости газа и ценовых индексах."
             },
             {
-              en: "Set up Ethereum integration through own nodes and third-party providers such as Infura.",
+              en: "Set up Ethereum integration through self-hosted nodes and third-party providers such as Infura.",
               ru: "Настроил интеграцию с Ethereum через собственные ноды и сторонних провайдеров, например Infura."
             }
           ],
@@ -329,8 +329,8 @@ export const cv: CV = {
       projects: [
         {
           about: {
-            en: "Drilling report management system, CRM, and web applications and landing pages for a digital agency.",
-            ru: "Система управления буровыми отчётами, CRM, веб-приложения и лендинги для digital-агентства."
+            en: "A drilling report management system, a CRM, and web applications and landing pages for a digital agency.",
+            ru: "Система управления отчётностью по бурению, CRM, а также веб-приложения и лендинги для digital-агентства."
           },
           highlights: [
             {
@@ -339,7 +339,7 @@ export const cv: CV = {
             },
             {
               en: "Defined technical scope with clients and proposed solutions for their business challenges.",
-              ru: "Формировал техническое задание с клиентами и предлагал решения их бизнес-задач."
+              ru: "Формировал техническое задание совместно с клиентами и предлагал решения их бизнес-задач."
             }
           ],
           stack: [
@@ -365,7 +365,7 @@ export const cv: CV = {
       projects: [
         {
           about: {
-            en: "Online vehicle registration for the e-Government of Kazakhstan: all legal procedures done online.",
+            en: "Online vehicle registration for the e-Government of Kazakhstan, with all legal procedures completed online.",
             ru: "Онлайн-регистрация транспортных средств для электронного правительства Казахстана."
           },
           highlights: [
@@ -396,7 +396,7 @@ export const cv: CV = {
           highlights: [
             {
               en: "Grew from support engineer to head of support for the AML product, then to lead integration engineer.",
-              ru: "Вырос от инженера до руководителя поддержки продукта, затем — ведущий инженер по интеграции."
+              ru: "Вырос от инженера до руководителя поддержки продукта, затем стал ведущим инженером по интеграции."
             },
             {
               en: "On the vendor side, led integration of the AML product into new client banks and their banking systems.",

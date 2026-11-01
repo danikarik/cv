@@ -1,6 +1,6 @@
 {
   // Cloudflare Pages project config (free tier).
-  // `name` becomes <name>.pages.dev — attach your custom domain in the dashboard.
+  // Served at https://cv.ozimiz.app (custom domain) and https://cv-3q1.pages.dev.
   "name": "cv",
   "compatibility_date": "2026-11-01",
   // Vite+ (`vp build`) emits the production site to ./dist

@@ -9,6 +9,26 @@ export const cv: CV = {
   location: { en: "Kazakhstan", ru: "Казахстан" },
   contacts: [
     {
+      label: { en: "Email", ru: "Почта" },
+      text: "daniyar@hey.com",
+      href: "mailto:daniyar@hey.com"
+    },
+    {
+      label: { en: "Phone", ru: "Телефон" },
+      text: "+7 777 251 45 15",
+      href: "tel:+77772514515"
+    },
+    {
+      label: { en: "WhatsApp", ru: "WhatsApp" },
+      text: "WhatsApp",
+      href: "https://wa.me/77772514515"
+    },
+    {
+      label: { en: "Telegram", ru: "Telegram" },
+      text: "t.me/danikarik",
+      href: "https://t.me/danikarik"
+    },
+    {
       label: { en: "GitHub", ru: "GitHub" },
       text: "github.com/danikarik",
       href: "https://github.com/danikarik"

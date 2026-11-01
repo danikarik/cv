@@ -132,8 +132,8 @@ export const cv: CV = {
           },
           highlights: [
             {
-              en: "Lead backend development (a Go monorepo with the main API and an event-processing service, plus a Rails 8 moderation back-office) and production rollouts: zero-downtime migrations, feature-flagged daemons, staged multi-service releases.",
-              ru: "Руковожу бэкенд-разработкой (Go-монорепозиторий с основным API и сервисом обработки событий, бэк-офис модерации на Rails 8) и выкатками в продакшн: миграции без простоя, демоны за фича-флагами, поэтапные релизы сервисов."
+              en: "Lead backend development — a Go monorepo (main API and event processing) and a Rails 8 moderation back-office — and zero-downtime production rollouts.",
+              ru: "Руковожу бэкенд-разработкой — Go-монорепозиторий (основной API и обработка событий) и бэк-офис модерации на Rails 8 — и выкатками в продакшн без простоя."
             },
             {
               en: "Made agentic coding part of the team's daily workflow: Claude Code with repository agent guides (AGENTS.md / CLAUDE.md), shared skills, and AI-assisted planning, implementation and code review.",

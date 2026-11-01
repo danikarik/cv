@@ -132,40 +132,36 @@ export const cv: CV = {
           },
           highlights: [
             {
-              en: "Lead backend development — a Go monorepo (main API and event processing) and a Rails 8 moderation back-office — and zero-downtime production rollouts.",
-              ru: "Руковожу бэкенд-разработкой — Go-монорепозиторий (основной API и обработка событий) и бэк-офис модерации на Rails 8 — и выкатками в продакшн без простоя."
+              en: "Lead backend development (Go services and a Rails 8 back-office) and zero-downtime production rollouts.",
+              ru: "Руковожу бэкенд-разработкой (Go-сервисы и бэк-офис на Rails 8) и выкатками в продакшн без простоя."
             },
             {
               en: "Made agentic coding part of the team's daily workflow: Claude Code with repository agent guides (AGENTS.md / CLAUDE.md), shared skills, and AI-assisted planning, implementation and code review.",
               ru: "Внедрил агентную разработку в ежедневную работу команды: Claude Code с агентными гайдами в репозиториях (AGENTS.md / CLAUDE.md), общими скиллами и AI-помощью в планировании, реализации и код-ревью."
             },
             {
-              en: "Designed and built the loyalty reward system end-to-end: multi-layer eligibility checks, idempotent event emission with race-safe first-reporter semantics, and monthly reconciliation with the bank's loyalty system.",
-              ru: "Спроектировал и реализовал систему вознаграждений с нуля: многоуровневые проверки права на награду, идемпотентная отправка событий с защитой от гонок (награду получает первый), ежемесячная сверка с программой лояльности банка."
+              en: "Designed and built the loyalty reward system end-to-end: eligibility rules, idempotent race-safe reward processing, and reconciliation with the partner bank's loyalty program.",
+              ru: "Спроектировал и реализовал систему вознаграждений с нуля: правила начисления, идемпотентная обработка наград с защитой от гонок и сверка с программой лояльности банка-партнёра."
             },
             {
-              en: "Built the feed ranking engine: engagement-based hot score computed in PostgreSQL triggers with content quality, author reputation and anti-abuse signals, plus per-user seen-post de-boosting on Redis; integrated the ML recommendation service under a 100 ms budget with fallback to in-house ranking.",
-              ru: "Разработал движок ранжирования ленты: hot score по вовлечённости в триггерах PostgreSQL с учётом качества контента, репутации автора и антифрод-сигналов, понижение уже просмотренных постов на Redis; интегрировал ML-сервис рекомендаций с бюджетом 100 мс и фолбэком на собственное ранжирование."
+              en: "Built the feed ranking engine on engagement, content quality and author reputation signals; integrated the ML recommendation service with a strict latency budget and graceful fallback.",
+              ru: "Разработал движок ранжирования ленты на сигналах вовлечённости, качества контента и репутации автора; интегрировал ML-сервис рекомендаций со строгим бюджетом задержки и фолбэком."
             },
             {
-              en: "Designed crowdsourced merchant location verification: fuzzy matching of POS transactions to 2GIS map locations (trigram similarity, MCC categories, geo and administrative fallbacks) with Wilson-score-based publishing.",
-              ru: "Спроектировал краудсорсинговую верификацию точек продаж: нечёткое сопоставление POS-транзакций с локациями 2GIS (триграммное сходство, MCC-категории, гео- и административные фолбэки) с публикацией по доверительному интервалу Уилсона."
+              en: "Designed crowdsourced merchant location verification: matching card transactions to 2GIS map locations with confidence-based publishing.",
+              ru: "Спроектировал краудсорсинговую верификацию точек продаж: сопоставление карточных транзакций с локациями 2GIS и публикация по уровню уверенности."
             },
             {
-              en: "Set up self-hosted inference for open LLMs (Llama 4) on vLLM with multi-GPU tensor parallelism; built AI-assisted moderation and content quality scoring on top, combining LLM signals with deterministic checks, duplicate detection and Unicode homoglyph normalization.",
-              ru: "Развернул self-hosted инференс открытых LLM (Llama 4) на vLLM с тензорным параллелизмом на нескольких GPU; на его основе построил AI-модерацию и оценку качества контента: сигналы LLM плюс детерминированные проверки, поиск дубликатов и нормализация Unicode-омоглифов."
+              en: "Set up self-hosted inference for open LLMs (Llama 4 on vLLM) and built AI-assisted moderation and content quality scoring on top of it.",
+              ru: "Развернул self-hosted инференс открытых LLM (Llama 4 на vLLM) и построил на нём AI-модерацию и оценку качества контента."
             },
             {
               en: "Designed the reputation and virtual currency (coins) economy with background anti-abuse scoring and engagement fraud detection.",
               ru: "Спроектировал экономику репутации и виртуальной валюты (коинов) с фоновым антиабьюз-скорингом и выявлением накрутки вовлечённости."
             },
             {
-              en: "Shipped platform infrastructure: push notification pipeline (transactional outbox → Kafka), Elasticsearch search with zero-downtime index versioning, partitioned session-event journal, and CDC replication into a data lake (Airflow) for ML and analytics.",
-              ru: "Запустил платформенную инфраструктуру: пайплайн пуш-уведомлений (transactional outbox → Kafka), поиск на Elasticsearch с версионированием индексов без простоя, партиционированный журнал сессионных событий и CDC-репликацию в data lake (Airflow) для ML и аналитики."
-            },
-            {
-              en: "Designing the challenges (gamification) engine: a configurable constructor with anti-cheat checks and real-time progress updates via Centrifugo.",
-              ru: "Проектирую движок челленджей (геймификация): настраиваемый конструктор с защитой от накруток и обновлением прогресса в реальном времени через Centrifugo."
+              en: "Built platform infrastructure: event-driven push notifications (Kafka), Elasticsearch search with zero-downtime reindexing, and data pipelines for analytics and ML.",
+              ru: "Запустил платформенную инфраструктуру: событийные пуш-уведомления (Kafka), поиск на Elasticsearch с переиндексацией без простоя и пайплайны данных для аналитики и ML."
             },
             {
               en: "Improved mini-app performance using Dynatrace and Prometheus data: image caching and WebP delivery via imgproxy, right-sizing of production Kubernetes workloads.",
@@ -174,7 +170,7 @@ export const cv: CV = {
           ],
           stack: [
             "Go",
-            "PostgreSQL (PostGIS, pg_partman)",
+            "PostgreSQL (PostGIS)",
             "Redis",
             "Apache Kafka",
             "Elasticsearch",

@@ -6,7 +6,7 @@ export const cv: CV = {
     en: "Tech Lead · Senior Software Engineer (Go)",
     ru: "Техлид · Senior Software Engineer (Go)"
   },
-  location: { en: "Kazakhstan", ru: "Казахстан" },
+  location: { en: "Almaty, Kazakhstan", ru: "Алматы, Казахстан" },
   contacts: [
     {
       label: { en: "Email", ru: "Почта" },

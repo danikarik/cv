@@ -180,7 +180,6 @@ export const cv: CV = {
             "Elasticsearch",
             "Protobuf",
             "Centrifugo",
-            "S3",
             "imgproxy",
             "Ruby on Rails 8",
             "Sidekiq",
@@ -196,8 +195,7 @@ export const cv: CV = {
             "Dynatrace",
             "Kubernetes",
             "Helm",
-            "GitLab CI",
-            "Docker"
+            "GitLab CI"
           ]
         }
       ]
@@ -278,7 +276,7 @@ export const cv: CV = {
           name: "Vault",
           about: {
             en: "SaaS for user authentication and identity verification with automatic face detection and matching against documents such as passports and ID cards.",
-            ru: "SaaS для аутентификации и верификации личности: распознавание лица и сверка с паспортом или удостоверением."
+            ru: "SaaS для аутентификации и верификации личности по лицу и документам."
           },
           highlights: [
             {
@@ -390,10 +388,7 @@ export const cv: CV = {
     },
     {
       company: "PRIMESOURCE",
-      role: {
-        en: "Software Development Engineer → Head of R&D",
-        ru: "Разработчик → руководитель R&D"
-      },
+      role: { en: "Lead Integration Engineer", ru: "Ведущий инженер по интеграции" },
       start: "2014-09",
       end: "2017-05",
       projects: [
@@ -404,12 +399,16 @@ export const cv: CV = {
           },
           highlights: [
             {
-              en: "Started as a support engineer and was promoted to Head of R&D.",
-              ru: "Начал инженером поддержки и вырос до руководителя R&D."
+              en: "Grew from support engineer to head of support for the AML product, then to lead integration engineer.",
+              ru: "Вырос от инженера до руководителя поддержки продукта, затем — ведущий инженер по интеграции."
             },
             {
-              en: "Increased throughput of the internal services that accept bank transactions; integrated with bank systems.",
-              ru: "Увеличил пропускную способность сервисов приёма банковских транзакций; интегрировал систему с банками."
+              en: "On the vendor side, led integration of the AML product into new client banks and their banking systems.",
+              ru: "Со стороны вендора руководил внедрением продукта в новых банках и интеграцией с их системами."
+            },
+            {
+              en: "Increased throughput of the internal services that accept bank transactions.",
+              ru: "Увеличил пропускную способность сервисов приёма банковских транзакций."
             }
           ],
           stack: ["C#", "PHP", "Oracle", "SOAP"]

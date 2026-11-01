@@ -330,5 +330,10 @@ h2 {
   section {
     margin-top: 1em;
   }
+
+  .meta {
+    column-gap: 0.8em;
+    font-size: 0.92em;
+  }
 }
 </style>
